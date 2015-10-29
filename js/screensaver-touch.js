@@ -1,10 +1,10 @@
 /**
- * screensaver-touch.js
+ * Screensaver-touch.js
  * Adapted from screensaver.js @ https://github.com/scimusmn/kiosk_video_player/blob/master/src/js/screensaver.js
  * After X minutes of inactivity, snap back to slide one.
  */
 
-$(function () {
+$(function() {
 
   // Start the clock
   idleTime = 0;
@@ -30,11 +30,11 @@ function timerIncrement() {
   idleTime = idleTime + 1;
 
   // If it's been X seconds of inactivity, save the screen
-  if ( idleTime > timeoutSeconds ) {
+  if (idleTime > timeoutSeconds) {
 
     // Reset to first slide w English
     changeLanguage('en');
-    $(".my-gallery").swipeshow().goTo(0);
+    $('.my-gallery').swipeshow().goTo(0);
     idleTime = 0;
 
   }
