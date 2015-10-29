@@ -94,6 +94,8 @@ $(document).ready(function() {
         $(current).find('video').each(function() {$(this)[0].play();});
 
         // Hide all slides outside viewport (FIX for ios 8 lag)
+        // Note - This possibly can cause a small stutter, so comment
+        // out if you aren't seeing any swipe lag.
         $(current).parent().children('.slide').each(function(i) {
           if (i == index || i == (index - 1) || i == (index + 1)) {
             $(this).show();
