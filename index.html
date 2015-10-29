@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <title>JTS Digital Flipbook</title>
+
+    <!-- CSS -->
+    <link href =  "css/bootstrap.min.css" rel="stylesheet">
+    <link href =  "js/video-js/video-js.css" rel="stylesheet">
+    <link href =  "css/vjs-jts-skin.css" rel="stylesheet">
+    <link href =  "css/custom.css" rel="stylesheet">
+    <link href=   "css/jquery.swipeshow.css" rel="stylesheet">
+
+    <!-- Javascript -->
+    <script src = "js/jquery-2.1.1.min.js"></script>
+    <script src=  "js/jquery.swipeshow.js"></script>
+    <script src=  "js/fastclick.js"></script>
+    <script src=  "js/video-js/video.js"></script>
+    <script src=  "js/screensaver-touch.js"></script>
+    <script src=  "js/main.js"></script>
+    <script src=  "js/video-js/video.js"></script>
+
+  </head>
+
+  <!-- IMPORTANT: Set config path for this FlipBook! -->
+  <body data-config="configs/dino.xml">
+
+    <div class="my-gallery swipeshow" >
+
+      <!-- Slides -->
+      <ul class="slides">
+
+        <!-- Slide Template -->
+       	<li class="slide">
+          <img src="" alt=""/>
+          <div class="carousel-caption">
+            <h2 id="head" class="head"></h2>
+            <p id="description" class="description"></p>
+          </div>
+        </li>
+
+      </ul>
+
+      <!-- Optional Controls -->
+      <div class="next"></div>
+      <div class="previous"></div>
+
+      <!-- Nav Dots -->
+      <div class='dots'></div>
+
+      <!-- Language Toggle -->
+      <div class="language-toggle">
+        <h3 id="language-text">Español</h3>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

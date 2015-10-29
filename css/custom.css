@@ -1,0 +1,278 @@
+ /* this is a custom css style sheet */
+@font-face {
+	font-family: 'Aller_Rg';
+	src: url('../fonts/aller_rg-webfont.ttf');
+}
+@font-face {
+  font-family: 'Aller_Bd';
+  src: url('../fonts/aller_bd-webfont.ttf');
+}
+@font-face {
+  font-family: 'Aller_Lt';
+  src: url('../fonts/aller_lt-webfont.ttf');
+}
+
+html {
+
+  /* disable text highlighting */
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  -khtml-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+
+  /* disable touch feedback flash */
+  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+
+}
+
+body {
+
+  margin: 0;
+  padding: 0 0;
+  font-family: "Aller_Lt";
+  color: #333333;
+  background: #000;
+
+  width: 1024px;
+  height: 768px;
+
+}
+
+h1 {
+  font-family: "Aller_Bd";
+  position: left;
+  width: 41%;
+  font-size: 44px;
+}
+
+h2 {
+  font-family: "Aller_Bd";
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 18px;
+  font-size: 37px;
+  width: 100%;
+  color: #cfcfcf;
+}
+
+h3 {
+  font-family: "Aller_Lt";
+}
+
+strong {
+  font-family: "Aller_Bd";
+}
+
+/* Remove default Button styles */
+button{
+  border:0;
+}
+button:focus{
+  outline:0;
+}
+
+/* Carousel Container */
+.my-gallery.swipeshow {
+  width: 100%;
+  height: 100%;
+
+  background: #000; /* Color that shows on edge swipe */
+  background: url('../img/slideshow_bg.png');
+  background-size: 100% 100%;
+}
+
+.my-gallery.swipeshow .slide {
+  background-color: #000;
+}
+
+.my-gallery.swipeshow .slide img,
+.my-gallery.swipeshow .slide video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* Nav Dots */
+.dots{
+
+  position: absolute;
+  bottom: 0%;
+  z-index: 2;
+  width: 100%;
+  height: 42px;
+  text-align: center;
+  background-color: #000;
+  pointer-events:none;
+
+}
+
+.dots .dot-item{
+
+  width: 10px;
+  height: 10px;
+
+  background:  #707070;
+  border: 1px solid #707070;
+  border-radius: 10px;
+
+  padding: 0px;
+  margin: 5px;
+
+  margin-top: 17px;
+
+}
+
+.dots .dot-item.active{
+
+  width: 12px;
+  height: 12px;
+
+  background-color: #efefef;
+  border: 2px solid #efefef;
+
+  margin: 4px;
+
+}
+
+/* Prev / Next */
+div.next,
+div.previous {
+
+  position: absolute;
+
+  width:0%;
+
+  /*Uncomment for next&previous buttons*/
+  /*width: 10%;*/
+
+  height: 100%;
+  background-color: rgba(33,88,99,0.0);
+  z-index: 2;
+
+}
+div.next {
+  right: 0%;
+}
+div.previous {
+  left: 0%;
+}
+
+/* Carousel Slides */
+.slide-head {
+
+  line-height: 150%;
+
+}
+
+.carousel-caption {
+
+	position: absolute;
+
+  left: 30px;
+  right: 0px;
+  top: 0px;
+
+	z-index: 1;
+	padding-top: 0px;
+	padding-bottom: 0px;
+
+  font-size: 29px;
+	color: #cfcfcf;
+	text-align: left;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+	width: 100%;
+  line-height: 130%;
+
+}
+
+.shrink-text h2 {
+  font-size: 34px;
+}
+.shrink-text .carousel-caption {
+
+  font-size: 26px;
+
+}
+
+.carousel-caption p {
+  width: 38%;
+}
+
+.bottom .carousel-caption {
+
+  top: 45%;
+
+}
+
+.bottom .carousel-caption h2 {
+  width: 50%;
+}
+
+.bottom .carousel-caption p {
+  width: 42%;
+}
+
+.shrink-text .bottom .carousel-caption p {
+  width: 38%;
+}
+
+.title .carousel-caption {
+
+	text-align: center;
+  margin: 0px auto;
+  width: 80%;
+
+}
+
+.title .carousel-caption .head {
+  padding-top: 200px;
+}
+
+.title .carousel-caption .description {
+  padding-top: 100px;
+}
+
+/* Language Toggle */
+.language-toggle {
+
+  position: absolute;
+
+  bottom: -9px;
+  left: 0px;
+
+  text-align: left;
+  cursor: pointer;
+
+  z-index: 3;
+  padding: 35px 75px 11px 30px;
+
+}
+.language-toggle h3 {
+
+  font-size: 19px;
+  font-family: "Aller_Bd";
+  color:#adadad;
+
+}
+.language-toggle:hover h3 {
+  color:#ccc;
+}
+.language-toggle h3.highlight  {
+  color:#ffa210;
+}
+
+
+/* Screensaver */
+#screensaver-video {
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1024px;
+  height: 768px;
+  z-index: 5;
+
+}
+
