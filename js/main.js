@@ -37,7 +37,8 @@ $(document).ready(function() {
 
       var slideId = $(this).attr('id');
       var slideClass = $(this).attr('class');
-      var slideBgSrc = $(this).attr('imgsrc');
+      var slideBgEnglishSrc = $(this).attr('enSrc');
+      var slideBgFrenchSrc = $(this).attr('frSrc');
 
       $(newSlide).attr('id', slideId);
       $(newSlide).addClass(slideClass);
@@ -45,13 +46,22 @@ $(document).ready(function() {
       if (slideClass != 'video') {
 
         // Static background
-        $(newSlide).find('img').first().attr('data-src', slideBgSrc);
+        $(newSlide).find('img').first().attr('en-src', slideBgEnglishSrc);
+        $(newSlide).find('img').first().attr('fr-src', slideBgFrenchSrc);
 
       } else {
 
         // Video background
-        setupVideoSlide(newSlide, slideId, slideBgSrc);
+        setupVideoSlide(newSlide, slideId, slideBgEnglishSrc);
 
+      }
+
+      if (slideClass.indexOf('sound') > 0){
+        // Add sound paths
+        var enSndPath = $(this).attr('enSnd');
+        var frSndPath = $(this).attr('frSnd');
+        $(newSlide).find('img').first().attr('en-snd', enSndPath);
+        $(newSlide).find('img').first().attr('fr-snd', frSndPath);
       }
 
     });
@@ -186,7 +196,7 @@ function changeLanguage(languageKey) {
 
     $('body img').each(function() {
 
-      var translationSrc = 'img/dino/4.2_' + langKey + $(this).attr('data-src');
+      var translationSrc = $(this).attr('' + langKey + '-src');
       $(this).attr('src', translationSrc);
 
     });
@@ -211,4 +221,3 @@ function getParameterByName(name) {
   var results = regex.exec(location.search);
   return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 }
-
