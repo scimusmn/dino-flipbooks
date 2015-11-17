@@ -3,8 +3,6 @@ var path = require('path');
 var builder = require('xmlbuilder');
 
 var targetDir = process.argv[2] || '.';
-var configTitle = process.argv[3] || 'config.xml';
-
 var configDirs = [];
 
 var imgExts = ['.png', '.jpg', '.gif'];
@@ -26,8 +24,10 @@ function findConfigWorthyDirectories(dir) {
 
       // If we find an image file, assume it is a configurable directory.
       if (imgExts.indexOf(path.extname(fileDir)) > -1) {
-        configDirs.push(dir);
+
+        makeConfigForDirectory(dir);
         break;
+
       }
 
       findConfigWorthyDirectories(fileDir);
@@ -40,7 +40,7 @@ function findConfigWorthyDirectories(dir) {
 
 function makeConfigForDirectory(dir) {
 
-  console.log('Building config for:', dir);
+  console.log('Targeting:', dir);
 
   // Create base xml structure
   var xml = builder.create('config')
@@ -49,6 +49,7 @@ function makeConfigForDirectory(dir) {
 
 
   // Make slide nodes for each asset.
+  var firstSlide;
   var files = fs.readdirSync(dir);
   for (var i = 0; i < files.length; i++) {
 
@@ -59,21 +60,41 @@ function makeConfigForDirectory(dir) {
 
     // If we find an image file, assume it is a configurable directory.
     if (imgExts.indexOf(ext) > -1) {
-      classStr += 'image ';
+      classStr += 'image';
     } else if (sndExts.indexOf(ext) > -1) {
-      classStr += 'sound ';
+      classStr = 'image sound';
     } else if (movExts.indexOf(ext) > -1) {
-      classStr += 'movie ';
+      classStr = 'movie';
     } else {
       // Didn't recognize extension. Skip.
     }
 
-    if (classStr != '') {
-      var item = xml.ele('slide');
-      item.att('id', 'slide_' + i);
-      item.att('class', classStr);
-      item.att('enSrc', fileDir);
-      item.att('frSrc', fileDir);
+    if (classStr != '' && fileDir.indexOf('_FR_') < 0) {
+
+      var enFile = fileDir;
+      var frFile = enFile.replace('EN', 'FR');
+
+      //Sound exception. Attribute to first slide.
+      if ( classStr.indexOf('sound') > -1) {
+
+        firstSlide.att('class', classStr);
+        firstSlide.att('enSnd', enFile);
+        firstSlide.att('frSnd', frFile);
+
+      } else {
+
+        // Create new slide.
+        var item = xml.ele('slide');
+        item.att('id', 'slide_' + i);
+        item.att('class', classStr);
+        item.att('enSrc', enFile);
+        item.att('frSrc', frFile);
+
+        // Remember first node
+        if (i === 1) firstSlide = item;
+
+      }
+
     }
 
   }
@@ -82,18 +103,15 @@ function makeConfigForDirectory(dir) {
   var xmlStr = xml.end({ pretty: true});
 
   // Write to XML file.
-  fs.writeFile(dir + '/' + configTitle, xmlStr, function (err) {
+  var saveDir = 'configs/';
+  var parentFolder = path.basename(dir);
+  var configTitle = parentFolder +'.xml';
+  fs.writeFile(saveDir + configTitle, xmlStr, function (err) {
     if (err) throw err;
-    console.log('Saved!  ' + dir + '/' + configTitle + ' ');
+    console.log('Saved--> '+saveDir + configTitle + ' ');
   });
 
 }
 
-
 // Kick things off.
 findConfigWorthyDirectories(targetDir);
-
-// Make/overwrite config files.
-for (var i = 0; i < configDirs.length; i++) {
-  makeConfigForDirectory(configDirs[i]);
-}
