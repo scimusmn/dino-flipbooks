@@ -47,7 +47,6 @@ function makeConfigForDirectory(dir) {
     .ele('component', {'assets': dir})
       .ele('slides');
 
-
   // Make slide nodes for each asset.
   var firstSlide;
   var files = fs.readdirSync(dir);
