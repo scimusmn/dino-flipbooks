@@ -56,12 +56,28 @@ $(document).ready(function() {
 
       }
 
-      if (slideClass.indexOf('sound') > 0){
+      if (slideClass.indexOf('sound') > 0) {
         // Add sound paths
         var enSndPath = $(this).attr('enSnd');
         var frSndPath = $(this).attr('frSnd');
-        $(newSlide).find('img').first().attr('en-snd', enSndPath);
-        $(newSlide).find('img').first().attr('fr-snd', frSndPath);
+        $(newSlide).attr('en-snd', enSndPath);
+        $(newSlide).attr('fr-snd', frSndPath);
+
+        // Wire up sound btn overlay
+        var sndBtnDiv = '<div id="snd_btn_overlay"/><div>';
+        $(newSlide).append(sndBtnDiv);
+        $(newSlide).find('#snd_btn_overlay').on('click', function() {
+
+          // Play sound
+          var langKey = language.toLowerCase();
+          var sndPath = $(this).parent().attr(langKey + '-snd');
+          console.log(langKey + '-snd', ' play sound:', sndPath);
+          var soundPlayed = new Howl({
+            urls: [sndPath],
+          }).play();
+
+        });
+
       }
 
     });
@@ -86,8 +102,8 @@ $(document).ready(function() {
       mouse: true,        /* Enable mouse dragging controls */
       keys: true,         /* Enable left/right keyboard keys */
 
-      $next: $('div.next'),					/* Assign next button */
-      $previous: $('div.previous'),	/* Assign prev button */
+      $next: $('div.next'),         /* Assign next button */
+      $previous: $('div.previous'), /* Assign prev button */
 
       onactivate: function(current, index, prev, prevIndex) {
 

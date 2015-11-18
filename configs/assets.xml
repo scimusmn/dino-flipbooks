@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config>
+  <component assets="./assets">
+    <slides>
+      <slide id="slide_3" class="image" enSrc="./assets/snd_btn.png" frSrc="./assets/snd_btn.png"/>
+    </slides>
+  </component>
+</config>

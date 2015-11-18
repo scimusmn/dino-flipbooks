@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+  <component assets="./assets/Lightbox/LB_1.3_Pisanosaurus">
+    <slides>
+      <slide id="slide_0" class="image" enSrc="./assets/Lightbox/LB_1.3_Pisanosaurus/1.3_EN_DD0.jpg" frSrc="./assets/Lightbox/LB_1.3_Pisanosaurus/1.3_FR_DD0.jpg"/>
+      <slide id="slide_1" class="image" enSrc="./assets/Lightbox/LB_1.3_Pisanosaurus/1.3_EN_DD1.jpg" frSrc="./assets/Lightbox/LB_1.3_Pisanosaurus/1.3_FR_DD1.jpg"/>
+      <slide id="slide_2" class="image" enSrc="./assets/Lightbox/LB_1.3_Pisanosaurus/1.3_EN_DD2.jpg" frSrc="./assets/Lightbox/LB_1.3_Pisanosaurus/1.3_FR_DD2.jpg"/>
+      <slide id="slide_3" class="image" enSrc="./assets/Lightbox/LB_1.3_Pisanosaurus/1.3_EN_DD3.jpg" frSrc="./assets/Lightbox/LB_1.3_Pisanosaurus/1.3_FR_DD3.jpg"/>
+      <slide id="slide_4" class="image" enSrc="./assets/Lightbox/LB_1.3_Pisanosaurus/1.3_EN_DD4.jpg" frSrc="./assets/Lightbox/LB_1.3_Pisanosaurus/1.3_FR_DD4.jpg"/>
+      <slide id="slide_5" class="image" enSrc="./assets/Lightbox/LB_1.3_Pisanosaurus/1.3_EN_DD5.jpg" frSrc="./assets/Lightbox/LB_1.3_Pisanosaurus/1.3_FR_DD5.jpg"/>
+    </slides>
+  </component>
+</config>

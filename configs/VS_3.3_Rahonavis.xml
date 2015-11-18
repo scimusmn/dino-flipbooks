@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+  <component assets="./assets/VitalStatistics/VS_3.3_Rahonavis">
+    <slides>
+      <slide id="slide_0" class="image sound" enSrc="./assets/VitalStatistics/VS_3.3_Rahonavis/3.3_EN_01.jpg" frSrc="./assets/VitalStatistics/VS_3.3_Rahonavis/3.3_FR_01.jpg" enSnd="./assets/VitalStatistics/VS_3.3_Rahonavis/3.3_EN_FastFacts_01_SoundsLike.mp3" frSnd="./assets/VitalStatistics/VS_3.3_Rahonavis/3.3_FR_FastFacts_01_SoundsLike.mp3"/>
+      <slide id="slide_1" class="image" enSrc="./assets/VitalStatistics/VS_3.3_Rahonavis/3.3_EN_02.jpg" frSrc="./assets/VitalStatistics/VS_3.3_Rahonavis/3.3_FR_02.jpg"/>
+      <slide id="slide_2" class="image" enSrc="./assets/VitalStatistics/VS_3.3_Rahonavis/3.3_EN_03.jpg" frSrc="./assets/VitalStatistics/VS_3.3_Rahonavis/3.3_FR_03.jpg"/>
+      <slide id="slide_3" class="image" enSrc="./assets/VitalStatistics/VS_3.3_Rahonavis/3.3_EN_04.jpg" frSrc="./assets/VitalStatistics/VS_3.3_Rahonavis/3.3_FR_04.jpg"/>
+      <slide id="slide_4" class="image" enSrc="./assets/VitalStatistics/VS_3.3_Rahonavis/3.3_EN_05.jpg" frSrc="./assets/VitalStatistics/VS_3.3_Rahonavis/3.3_FR_05.jpg"/>
+      <slide id="slide_5" class="image" enSrc="./assets/VitalStatistics/VS_3.3_Rahonavis/3.3_EN_06.jpg" frSrc="./assets/VitalStatistics/VS_3.3_Rahonavis/3.3_FR_06.jpg"/>
+      <slide id="slide_6" class="image" enSrc="./assets/VitalStatistics/VS_3.3_Rahonavis/3.3_EN_07.jpg" frSrc="./assets/VitalStatistics/VS_3.3_Rahonavis/3.3_FR_07.jpg"/>
+      <slide id="slide_7" class="image" enSrc="./assets/VitalStatistics/VS_3.3_Rahonavis/3.3_EN_08.jpg" frSrc="./assets/VitalStatistics/VS_3.3_Rahonavis/3.3_FR_08.jpg"/>
+    </slides>
+  </component>
+</config>

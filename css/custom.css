@@ -262,6 +262,22 @@ div.previous {
   color:#ffa210;
 }
 
+#snd_btn_overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url('../assets/snd_btn.png');
+  background-size: 100% 100%;
+  background-position:50% 50%;
+  background-repeat: no-repeat;
+}
+
+#snd_btn_overlay:active {
+
+  background-size: 95% 95%;
+
+}
+
 
 /* Screensaver */
 #screensaver-video {

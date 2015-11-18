@@ -2,9 +2,6 @@ var fs = require('fs');
 var path = require('path');
 var builder = require('xmlbuilder');
 
-var targetDir = process.argv[2] || '.';
-var configDirs = [];
-
 var imgExts = ['.png', '.jpg', '.gif'];
 var sndExts = ['.mp3', '.ogg', '.wav'];
 var movExts = ['.mov', '.mp4', '.m4v'];
@@ -74,7 +71,7 @@ function makeConfigForDirectory(dir) {
       var frFile = enFile.replace('EN', 'FR');
 
       //Sound exception. Attribute to first slide.
-      if ( classStr.indexOf('sound') > -1) {
+      if (classStr.indexOf('sound') > -1) {
 
         firstSlide.att('class', classStr);
         firstSlide.att('enSnd', enFile);
@@ -90,7 +87,10 @@ function makeConfigForDirectory(dir) {
         item.att('frSrc', frFile);
 
         // Remember first node
-        if (i === 1) firstSlide = item;
+        if (i === 0) {
+          console.log('FIRST', i, enFile)
+          firstSlide = item;
+        }
 
       }
 
@@ -104,13 +104,14 @@ function makeConfigForDirectory(dir) {
   // Write to XML file.
   var saveDir = 'configs/';
   var parentFolder = path.basename(dir);
-  var configTitle = parentFolder +'.xml';
-  fs.writeFile(saveDir + configTitle, xmlStr, function (err) {
+  var configTitle = parentFolder + '.xml';
+  fs.writeFile(saveDir + configTitle, xmlStr, function(err) {
     if (err) throw err;
-    console.log('Saved--> '+saveDir + configTitle + ' ');
+    console.log('Saved--> ' + saveDir + configTitle + ' ');
   });
 
 }
 
-// Kick things off.
+// Kick things off using parent directory...
+var targetDir = process.argv[2] || '.';
 findConfigWorthyDirectories(targetDir);
