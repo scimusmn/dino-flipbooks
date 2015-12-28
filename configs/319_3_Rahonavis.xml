@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+  <component assets="./assets/Lightbox/319_3_Rahonavis">
+    <slides>
+      <slide id="slide_0" class="image sound" enSrc="./assets/Lightbox/319_3_Rahonavis/EN_01.jpg" frSrc="./assets/Lightbox/319_3_Rahonavis/FR_01.jpg" enSnd="./assets/Lightbox/319_3_Rahonavis/EN_FastFacts_01_SoundsLike.mp3" frSnd="./assets/Lightbox/319_3_Rahonavis/FR_FastFacts_01_SoundsLike.mp3"/>
+      <slide id="slide_1" class="image" enSrc="./assets/Lightbox/319_3_Rahonavis/EN_02.jpg" frSrc="./assets/Lightbox/319_3_Rahonavis/FR_02.jpg"/>
+      <slide id="slide_2" class="image" enSrc="./assets/Lightbox/319_3_Rahonavis/EN_03.jpg" frSrc="./assets/Lightbox/319_3_Rahonavis/FR_03.jpg"/>
+      <slide id="slide_3" class="image" enSrc="./assets/Lightbox/319_3_Rahonavis/EN_04.jpg" frSrc="./assets/Lightbox/319_3_Rahonavis/FR_04.jpg"/>
+      <slide id="slide_4" class="image" enSrc="./assets/Lightbox/319_3_Rahonavis/EN_05.jpg" frSrc="./assets/Lightbox/319_3_Rahonavis/FR_05.jpg"/>
+      <slide id="slide_5" class="image" enSrc="./assets/Lightbox/319_3_Rahonavis/EN_06.jpg" frSrc="./assets/Lightbox/319_3_Rahonavis/FR_06.jpg"/>
+      <slide id="slide_6" class="image" enSrc="./assets/Lightbox/319_3_Rahonavis/EN_07.jpg" frSrc="./assets/Lightbox/319_3_Rahonavis/FR_07.jpg"/>
+      <slide id="slide_7" class="image" enSrc="./assets/Lightbox/319_3_Rahonavis/EN_08.jpg" frSrc="./assets/Lightbox/319_3_Rahonavis/FR_08.jpg"/>
+    </slides>
+  </component>
+</config>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+  <component assets="./assets/VitalStatistics/367_Malawisaurus">
+    <slides>
+      <slide id="slide_0" class="image" enSrc="./assets/VitalStatistics/367_Malawisaurus/EN_0.jpg" frSrc="./assets/VitalStatistics/367_Malawisaurus/FR_0.jpg"/>
+      <slide id="slide_1" class="image" enSrc="./assets/VitalStatistics/367_Malawisaurus/EN_1.jpg" frSrc="./assets/VitalStatistics/367_Malawisaurus/FR_1.jpg"/>
+      <slide id="slide_2" class="image" enSrc="./assets/VitalStatistics/367_Malawisaurus/EN_2.jpg" frSrc="./assets/VitalStatistics/367_Malawisaurus/FR_2.jpg"/>
+      <slide id="slide_3" class="image" enSrc="./assets/VitalStatistics/367_Malawisaurus/EN_3.jpg" frSrc="./assets/VitalStatistics/367_Malawisaurus/FR_3.jpg"/>
+      <slide id="slide_4" class="image" enSrc="./assets/VitalStatistics/367_Malawisaurus/EN_4.jpg" frSrc="./assets/VitalStatistics/367_Malawisaurus/FR_4.jpg"/>
+      <slide id="slide_5" class="image" enSrc="./assets/VitalStatistics/367_Malawisaurus/EN_5.jpg" frSrc="./assets/VitalStatistics/367_Malawisaurus/FR_5.jpg"/>
+    </slides>
+  </component>
+</config>

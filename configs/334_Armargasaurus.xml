@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+  <component assets="./assets/VitalStatistics/334_Armargasaurus">
+    <slides>
+      <slide id="slide_0" class="image" enSrc="./assets/VitalStatistics/334_Armargasaurus/EN_0.jpg" frSrc="./assets/VitalStatistics/334_Armargasaurus/FR_0.jpg"/>
+      <slide id="slide_1" class="image" enSrc="./assets/VitalStatistics/334_Armargasaurus/EN_1.jpg" frSrc="./assets/VitalStatistics/334_Armargasaurus/FR_1.jpg"/>
+      <slide id="slide_2" class="image" enSrc="./assets/VitalStatistics/334_Armargasaurus/EN_2.jpg" frSrc="./assets/VitalStatistics/334_Armargasaurus/FR_2.jpg"/>
+      <slide id="slide_3" class="image" enSrc="./assets/VitalStatistics/334_Armargasaurus/EN_3.jpg" frSrc="./assets/VitalStatistics/334_Armargasaurus/FR_3.jpg"/>
+      <slide id="slide_4" class="image" enSrc="./assets/VitalStatistics/334_Armargasaurus/EN_4.jpg" frSrc="./assets/VitalStatistics/334_Armargasaurus/FR_4.jpg"/>
+      <slide id="slide_5" class="image" enSrc="./assets/VitalStatistics/334_Armargasaurus/EN_5.jpg" frSrc="./assets/VitalStatistics/334_Armargasaurus/FR_5.jpg"/>
+    </slides>
+  </component>
+</config>

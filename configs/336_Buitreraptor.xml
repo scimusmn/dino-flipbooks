@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+  <component assets="./assets/VitalStatistics/336_Buitreraptor">
+    <slides>
+      <slide id="slide_0" class="image" enSrc="./assets/VitalStatistics/336_Buitreraptor/EN_0.jpg" frSrc="./assets/VitalStatistics/336_Buitreraptor/FR_0.jpg"/>
+      <slide id="slide_1" class="image" enSrc="./assets/VitalStatistics/336_Buitreraptor/EN_1.jpg" frSrc="./assets/VitalStatistics/336_Buitreraptor/FR_1.jpg"/>
+      <slide id="slide_2" class="image" enSrc="./assets/VitalStatistics/336_Buitreraptor/EN_2.jpg" frSrc="./assets/VitalStatistics/336_Buitreraptor/FR_2.jpg"/>
+      <slide id="slide_3" class="image" enSrc="./assets/VitalStatistics/336_Buitreraptor/EN_3.jpg" frSrc="./assets/VitalStatistics/336_Buitreraptor/FR_3.jpg"/>
+      <slide id="slide_4" class="image" enSrc="./assets/VitalStatistics/336_Buitreraptor/EN_4.jpg" frSrc="./assets/VitalStatistics/336_Buitreraptor/FR_4.jpg"/>
+      <slide id="slide_5" class="image" enSrc="./assets/VitalStatistics/336_Buitreraptor/EN_5.jpg" frSrc="./assets/VitalStatistics/336_Buitreraptor/FR_5.jpg"/>
+    </slides>
+  </component>
+</config>

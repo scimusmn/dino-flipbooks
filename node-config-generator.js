@@ -65,7 +65,7 @@ function makeConfigForDirectory(dir) {
       // Didn't recognize extension. Skip.
     }
 
-    if (classStr != '' && fileDir.indexOf('_FR_') < 0) {
+    if (classStr != '' && fileDir.indexOf('FR_') < 0) {
 
       var enFile = fileDir;
       var frFile = enFile.replace('EN', 'FR');

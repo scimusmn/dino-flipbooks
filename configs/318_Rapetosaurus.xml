@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+  <component assets="./assets/VitalStatistics/318_Rapetosaurus">
+    <slides>
+      <slide id="slide_0" class="image" enSrc="./assets/VitalStatistics/318_Rapetosaurus/EN_0.jpg" frSrc="./assets/VitalStatistics/318_Rapetosaurus/FR_0.jpg"/>
+      <slide id="slide_1" class="image" enSrc="./assets/VitalStatistics/318_Rapetosaurus/EN_1.jpg" frSrc="./assets/VitalStatistics/318_Rapetosaurus/FR_1.jpg"/>
+      <slide id="slide_2" class="image" enSrc="./assets/VitalStatistics/318_Rapetosaurus/EN_2.jpg" frSrc="./assets/VitalStatistics/318_Rapetosaurus/FR_2.jpg"/>
+      <slide id="slide_3" class="image" enSrc="./assets/VitalStatistics/318_Rapetosaurus/EN_3.jpg" frSrc="./assets/VitalStatistics/318_Rapetosaurus/FR_3.jpg"/>
+      <slide id="slide_4" class="image" enSrc="./assets/VitalStatistics/318_Rapetosaurus/EN_4.jpg" frSrc="./assets/VitalStatistics/318_Rapetosaurus/FR_4.jpg"/>
+      <slide id="slide_5" class="image" enSrc="./assets/VitalStatistics/318_Rapetosaurus/EN_5.jpg" frSrc="./assets/VitalStatistics/318_Rapetosaurus/FR_5.jpg"/>
+    </slides>
+  </component>
+</config>
