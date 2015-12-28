@@ -2,7 +2,7 @@
 <config>
   <component assets="./assets/Lightbox/378_2_Ouranosaurs">
     <slides>
-      <slide id="slide_0" class="image" enSrc="./assets/Lightbox/378_2_Ouranosaurs/EN_01.jpg" frSrc="./assets/Lightbox/378_2_Ouranosaurs/FR_01.jpg"/>
+<!--       <slide id="slide_0" class="image" enSrc="./assets/Lightbox/378_2_Ouranosaurs/EN_01.jpg" frSrc="./assets/Lightbox/378_2_Ouranosaurs/FR_01.jpg"/> -->
       <slide id="slide_1" class="image" enSrc="./assets/Lightbox/378_2_Ouranosaurs/EN_02.jpg" frSrc="./assets/Lightbox/378_2_Ouranosaurs/FR_02.jpg"/>
       <slide id="slide_2" class="image" enSrc="./assets/Lightbox/378_2_Ouranosaurs/EN_03.jpg" frSrc="./assets/Lightbox/378_2_Ouranosaurs/FR_03.jpg"/>
       <slide id="slide_3" class="image" enSrc="./assets/Lightbox/378_2_Ouranosaurs/EN_04.jpg" frSrc="./assets/Lightbox/378_2_Ouranosaurs/FR_04.jpg"/>
