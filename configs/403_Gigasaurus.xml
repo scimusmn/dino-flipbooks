@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+  <component assets="./assets/VitalStatistics/403_Gigasaurus">
+    <slides>
+      <slide id="slide_0" class="image" enSrc="./assets/VitalStatistics/403_Gigasaurus/EN_0.jpg" frSrc="./assets/VitalStatistics/403_Gigasaurus/FR_0.jpg"/>
+      <slide id="slide_1" class="image" enSrc="./assets/VitalStatistics/403_Gigasaurus/EN_1.jpg" frSrc="./assets/VitalStatistics/403_Gigasaurus/FR_1.jpg"/>
+      <slide id="slide_2" class="image" enSrc="./assets/VitalStatistics/403_Gigasaurus/EN_2.jpg" frSrc="./assets/VitalStatistics/403_Gigasaurus/FR_2.jpg"/>
+      <slide id="slide_3" class="image" enSrc="./assets/VitalStatistics/403_Gigasaurus/EN_3.jpg" frSrc="./assets/VitalStatistics/403_Gigasaurus/FR_3.jpg"/>
+      <slide id="slide_4" class="image" enSrc="./assets/VitalStatistics/403_Gigasaurus/EN_4.jpg" frSrc="./assets/VitalStatistics/403_Gigasaurus/FR_4.jpg"/>
+      <slide id="slide_5" class="image" enSrc="./assets/VitalStatistics/403_Gigasaurus/EN_5.jpg" frSrc="./assets/VitalStatistics/403_Gigasaurus/FR_5.jpg"/>
+    </slides>
+  </component>
+</config>

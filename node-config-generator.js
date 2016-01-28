@@ -87,8 +87,8 @@ function makeConfigForDirectory(dir) {
         item.att('frSrc', frFile);
 
         // Remember first node
-        if (i === 0) {
-          console.log('FIRST', i, enFile)
+        if (i === 1) {
+          // console.log('FIRST', i, enFile);
           firstSlide = item;
         }
 

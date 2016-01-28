@@ -2,14 +2,15 @@
 <config>
   <component assets="./assets/Lightbox/378_1_Suchomimus">
     <slides>
-      <slide id="slide_0" class="image sound" enSrc="./assets/Lightbox/378_1_Suchomimus/EN_01.jpg" frSrc="./assets/Lightbox/378_1_Suchomimus/FR_01.jpg" enSnd="./assets/Lightbox/378_1_Suchomimus/EN_FastFacts_01_SoundsLike.mp3" frSnd="./assets/Lightbox/378_1_Suchomimus/FR_FastFacts_01_SoundsLike.mp3"/>
-      <slide id="slide_1" class="image" enSrc="./assets/Lightbox/378_1_Suchomimus/EN_02.jpg" frSrc="./assets/Lightbox/378_1_Suchomimus/FR_02.jpg"/>
+      <slide id="slide_0" class="image" enSrc="./assets/Lightbox/378_1_Suchomimus/EN_01.jpg" frSrc="./assets/Lightbox/378_1_Suchomimus/FR_01.jpg"/>
+      <slide id="slide_1" class="image sound" enSrc="./assets/Lightbox/378_1_Suchomimus/EN_02.jpg" frSrc="./assets/Lightbox/378_1_Suchomimus/FR_02.jpg" enSnd="./assets/Lightbox/378_1_Suchomimus/EN_FastFacts_01_SoundsLike.mp3" frSnd="./assets/Lightbox/378_1_Suchomimus/FR_FastFacts_01_SoundsLike.mp3"/>
       <slide id="slide_2" class="image" enSrc="./assets/Lightbox/378_1_Suchomimus/EN_03.jpg" frSrc="./assets/Lightbox/378_1_Suchomimus/FR_03.jpg"/>
       <slide id="slide_3" class="image" enSrc="./assets/Lightbox/378_1_Suchomimus/EN_04.jpg" frSrc="./assets/Lightbox/378_1_Suchomimus/FR_04.jpg"/>
       <slide id="slide_4" class="image" enSrc="./assets/Lightbox/378_1_Suchomimus/EN_05.jpg" frSrc="./assets/Lightbox/378_1_Suchomimus/FR_05.jpg"/>
       <slide id="slide_5" class="image" enSrc="./assets/Lightbox/378_1_Suchomimus/EN_06.jpg" frSrc="./assets/Lightbox/378_1_Suchomimus/FR_06.jpg"/>
       <slide id="slide_6" class="image" enSrc="./assets/Lightbox/378_1_Suchomimus/EN_07.jpg" frSrc="./assets/Lightbox/378_1_Suchomimus/FR_07.jpg"/>
       <slide id="slide_7" class="image" enSrc="./assets/Lightbox/378_1_Suchomimus/EN_08.jpg" frSrc="./assets/Lightbox/378_1_Suchomimus/FR_08.jpg"/>
+      <slide id="slide_8" class="image" enSrc="./assets/Lightbox/378_1_Suchomimus/EN_09.jpg" frSrc="./assets/Lightbox/378_1_Suchomimus/FR_09.jpg"/>
     </slides>
   </component>
 </config>
